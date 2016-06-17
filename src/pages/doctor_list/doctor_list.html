@@ -1,0 +1,14 @@
+<div id="doctor-list" infinite-scroll="doctorList.nextPage()" infinite-scroll-distance='3'>
+
+    <section class="search" ng-click="toSearch()">
+        <input type="text" placeholder="输入医生姓名、医院关键字搜索">
+    </section>
+	
+    <doctor-list doctor-list="doctorList.items" to-doctor-detail="toDoctorDetail(doctorId)"></doctor-list>
+ 
+    <div class='global-paging' ng-show="doctorList.isHasMoreData">正在加载数据...</div>
+    <div class='global-paging' ng-hide="doctorList.isHasMoreData">没有更多数据了</div>
+</div>
+
+
+<nav-bar active='askDoctor'></nav-bar>

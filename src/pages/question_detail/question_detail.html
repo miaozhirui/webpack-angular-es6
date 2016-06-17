@@ -1,0 +1,41 @@
+<!--问题详情页面-->
+
+<div id="question-detail">
+    <!--医生信息-->
+    <div class="patient-info">
+        <div class="left">
+            <figure>
+                <img ng-src="{{questionDetail.head}}" alt="">
+            </figure>
+            <span class="name">{{questionDetail.nickName}}</span>
+        </div>
+        <div class="right">
+            <span class="money">¥{{questionDetail.price/100}}</span>
+        </div>
+    </div>
+
+    <!--问题列表-->
+    <question-list class="question-detail" list-data="question" play-video="playVideo(questionId)" is-twinke="isTwinke" is-allow-play="isAllowPlay"></question-list>
+
+    <!--医生信息-->
+    <div class="doctor display-box" ng-click="toDoctorList(questionDetail.doctorId)">
+        <div class="left">
+            <img ng-src="{{questionDetail.doctorHead}}" alt="">
+        </div>
+        <div class="center display-box-1">
+            <p>{{questionDetail.doctorName}} {{questionDetail.professionTitle}}</p>
+            <p>{{questionDetail.hospitalName}}</p>
+        </div>
+        <div class="right"></div>
+    </div>
+    
+    <!--分享区域-->
+    <share class="share" ng-hide="isFromShared"></share>
+
+    <!--二维码区域-->
+    <qr-code ng-show="isFromShared"></qr-code>
+    <audio id="audioContent"></audio>
+</div>
+
+
+<nav-bar active="myInfo"></nav-bar>

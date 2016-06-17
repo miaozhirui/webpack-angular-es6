@@ -1,0 +1,19 @@
+<div id="my-page">
+    <!--没有问题列表-->
+    <div class="empty-list" ng-show="questionList.length==0">
+        <span class="empty-icon"></span>
+        <p>还没有咨询过问题呀,<br/>要不这就去找专家们咨询一下?</p>
+
+        <button class="start-ask" ng-click="startAsk()">开始咨询</button>
+    </div>
+    <!--有问题列表-->
+
+    <div class="question-list" ng-hide="questionList.length==0">
+        <p class="my-desc">我咨询过的</p>
+        
+        <question-list to-question-detail = "toQuestionDetail(questionId)"  list-data="questionList"></question-list>
+    </div>
+    
+</div>
+
+<nav-bar active="myInfo"></nav-bar>

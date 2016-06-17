@@ -1,0 +1,66 @@
+body {
+
+	background: #f6f6f6;
+}
+
+.nav-bar {
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:.49rem;
+	border-top:1px solid #d8d8d8;
+	z-index: 9999;
+	background: #fff;
+
+	li{
+		a{
+			display: block;
+			text-align: center;
+			height:.49rem;
+			line-height: .49rem;
+			color:#4a4a4a;
+		}
+	}
+
+	.split-line{
+		display: block;
+		height:16px;
+		border-right:1px solid #d8d8d8;
+		margin-top:.17rem;
+	}
+
+	.active{
+		font-size: .16rem;
+		color:#e75d3c;
+	}
+
+}
+
+
+.root{
+	background: #f6f6f6;
+	padding-bottom: .49rem;
+	max-width: 5.2rem;
+	margin: 0 auto;
+}
+
+// 全局分页样式
+.global-paging{
+	text-align: center;
+	font-size: .12rem;
+	color:#9b9b9b;
+	line-height: .2rem;
+}
+
+/* loading 蒙板 */
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0) url("../imgs/loading.gif") no-repeat center 30%;
+  background-size: 10%;
+  z-index: 10000;
+}

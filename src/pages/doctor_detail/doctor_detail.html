@@ -1,0 +1,76 @@
+<div id="doctor-detail" infinite-scroll="questionList.nextPage()" infinite-scroll-distance='3'>
+
+    <!--医生头像-->
+    <div class="doctor-head">
+        <figure>
+            <img ng-src="{{doctorDetail.doctorHead}}" alt="">
+        </figure>
+        <div class="video-profile" ng-if="doctorDetail.video">
+            <div class="user-guide" ng-click="showVideo()"></div>
+
+        </div>
+    </div>
+
+    <!--医生描述-->
+    <div class="doctor-describe">
+        <p>{{doctorDetail.doctorName}} {{doctorDetail.professionTitle}}</p>
+        <p>{{doctorDetail.hospitalName}}</p>
+    </div>
+
+    <!--医生擅长tag-->
+    <doctor-tag class="tag" doctor-tag="doctorDetail.specialtyName"></doctor-tag>
+
+    <!--向医生提问区域-->
+    <div class="ask-question">
+        <p>向Ta咨询</p>
+        <textarea name="" placeholder="向{{doctorDetail.doctorName}}医生提问,Ta将语音答复您:超48小时未答复,全额退款给您" ng-model="question" ng-change="checkNum()"></textarea>
+        <p class="count-text"><span>{{wordNum}}</span>/<span>{{wordTotal}}</span> <span class="total-count" ng-show="showErrorTip">最多{{wordTotal}}字</span></p>
+    </div>
+    
+    <!--用户行为区域-->
+    <div class="user-action">
+        <p>¥{{doctorDetail.price/100}}</p>
+        <button type="button" ng-click="submitQuestion(doctorDetail.doctorId)">写好了</button>
+    </div>
+
+    <!--关注公众号的用户-->
+    <section class="has-follow">
+        <!--分享区域-->
+        <share></share>
+
+        <!--咨询次数-->
+        <div class="count" ng-hide="isFromShared">
+            <span class="cover-ask">{{doctorDetail.questionCount}}次咨询</span>
+            <span class="cover-listen">{{doctorDetail.listenCount}}次收听</span>
+        </div>
+        <!--用户使用过的列表-->
+    </section>
+    <question-list list-data="questionList.items" ng-hide="isFromShared" to-question-detail = "toQuestionDetail(questionId)"></question-list>
+
+    <div class='global-paging' ng-hide="isFromShared">{{showTextDesc(searchList.isHasMoreData)}}</div>
+    
+    <!--医生详情分享出去的二维码区域(没有关注的用户)-->
+    <qr-code class="qr-code" ng-show="isFromShared"></qr-code>
+</div>
+
+<nav-bar active='askDoctor'></nav-bar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

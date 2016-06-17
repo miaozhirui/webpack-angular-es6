@@ -1,0 +1,15 @@
+<!--搜索医生页面-->
+<div id="search-doctor" infinite-scroll="searchList.nextPage()" infinite-scroll-distance='3'>
+    <!--搜索-->
+    <div class="search">
+        <form ng-submit="searchDoctor()">
+            <input type="text" id="keyword" placeholder="输入医生的名字、医院关键字搜索" ng-model="keywords" focus>
+            <span class="cancel" ng-click="toDoctorList()">取消</span>
+        </form>
+    </div> 
+
+    <doctor-list doctor-list="searchList.items" to-doctor-detail="toDoctorPage(doctorId)"></doctor-list>
+
+    <div class='global-paging'>{{showTextDesc(searchList.isHasMoreData)}}</div>
+    
+</div>

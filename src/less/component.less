@@ -1,0 +1,239 @@
+//医生标签组件
+.component-doctor-tag {
+    overflow: hidden;
+    margin-top: .13rem;
+    margin-left: -.08rem;
+    width: 2.4rem;
+    ul {
+        li {
+            float: left;
+            height: .24rem;
+            border-radius: 1rem;
+            margin-left: .08rem;
+            text-align: center;
+            background: #f6f6f6;
+            margin-top: .08rem;
+            color: #9b9b9b;
+            font-size: .12rem;
+            line-height: .24rem;
+            padding: 0 .17rem;
+        }
+    }
+}
+
+//医生列表组件
+.component-doctor-list {
+    background: #f6f6f6;
+    ul {
+        li.display-box {
+            padding: .24rem;
+            background: #fff;
+            margin-bottom: .08rem;
+            .left {
+                width: .4rem;
+                margin-right: .1rem;
+                height: .4rem;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    width: .4rem;
+                }
+            }
+            .right {
+                p {
+                    line-height: .21rem;
+                    color: #4a4a4a;
+                }
+                .heat {
+                    margin-top: .12rem;
+                    font-size: .12rem;
+                    .consul {
+                        color: #e75d3c;
+                    }
+                    .listen {
+                        margin-left: .16rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//问题列表
+.component-question-list {
+    background: #fff;
+    ul {
+        li {
+            padding-bottom: .29rem;
+            //问题
+            .question {
+                padding: .24rem .29rem 0;
+                line-height: .22rem;
+                color: #4a4a4a;
+                font-family: STHeitiSC-Light;
+                font-size: .16rem;
+            }
+            //医生信息
+            .doctor-info {
+                border-radius: 5px;
+                border: 1px solid #ededed;
+                padding-left: .32rem;
+                padding-top: .19rem;
+                padding-right: .1rem;
+                position: relative;
+                padding-bottom: .19rem;
+
+                margin: .22rem .24rem 0rem .4rem;
+                //医生头像
+                .head {
+                    width: .4rem;
+                    height: .4rem;
+                    position: absolute;
+                    top: -.15rem;
+                    left: -.15rem;
+                    background: #fff;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                .info {
+                    font-size: .13rem;
+                    line-height: .19rem;
+                    color: #9b9b9b;
+                }
+                .record {
+                    position: relative;
+                    .left {
+                        width: 1.44rem;
+                        height: .4rem;
+                        display: inline-block;
+                        background: url("../imgs/icon-yuyin-02@2x.png") no-repeat center;
+                        background-size: contain;
+                        line-height: .49rem;
+                        font-size: .15rem;
+                        color: #fff;
+                        text-indent: .33rem;
+                        position: relative;
+                        .play_icon {
+                            position: absolute;
+                            left: .15rem;
+                            top: .16rem;
+                            display: block;
+                            width: .11rem;
+                            height: .17rem;
+                            background: url("../imgs/icon-bofang@2x.png") no-repeat center;
+                            background-size: contain;
+                        }
+                        .play_icon.twinke{
+                            background: url('../imgs/play_gif@2x.gif') no-repeat center;
+                            background-size: contain;
+                        }
+                        span:nth-of-type(3) {
+                            margin-left: .15rem;
+                        }
+                    }
+                    .left.invalid {
+                        text-indent: .2rem;
+                        background: url("../imgs/group-2@2x.png") no-repeat center;
+                        background-size: contain;
+                    }
+                    .doctor-reply{
+
+                        width:1.44rem;
+                        height:.4rem;
+                        position: absolute;
+                        top:0px;
+                        left:0px;
+                    }
+                    .right {
+                        float: right;
+                        display: inline-block;
+                        p {
+                            text-align: right;
+                            height: .4rem;
+                            line-height: .48rem;
+                            color: #e75d3c;
+                            font-size: .14rem;
+                            text-overflow:ellipsis;
+                            white-space:nowrap;  
+                            overflow: hidden; 
+                        }
+                    }
+
+                    @media screen and (max-width:320px) {
+                        .right{
+                            width:.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//用户分享区域
+.component-share {
+    width: 1.4rem;
+    margin: 0 auto;
+    margin-top: .16rem;
+    .share-icon {
+        display: inline-block;
+        width: .2rem;
+        height: .2rem;
+        background: url("../imgs/icon-share@2x.png") no-repeat center;
+        background-size: contain;
+        margin-right: .08rem;
+    }
+    .copy {
+        font-size: .15rem;
+        color: #4a4a4a;
+    }
+    .guide {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .5);
+        .tip-copy {
+            margin-top: 1rem;
+            p {
+                color: #fff;
+                font-size: .17rem;
+                line-height: .26rem;
+                text-align: center;
+            }
+        }
+        .arrow {
+            width: .55rem;
+            height: .73rem;
+            background: url("../imgs/icon-guide@2x.png") no-repeat center;
+            background-size: contain;
+            position: absolute;
+            right: .6rem;
+            top: .3rem;
+        }
+    }
+}
+
+//webdudu的二维码
+.component-qr-code {
+    padding-bottom: .62rem;
+    padding-top: .4rem;
+    background: #f6f6f6;
+    p {
+        font-size: .14rem;
+        color: #9b9b9b;
+        line-height: .2rem;
+        text-align: center;
+    }
+    .qr {
+        width: 1.22rem;
+        height: 1.22rem;
+        margin: .15rem auto 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

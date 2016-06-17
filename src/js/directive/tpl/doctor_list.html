@@ -1,0 +1,20 @@
+<section class="component-doctor-list" >
+    <ul>
+        <li ng-click="handleLiClick(doctor.doctorId)" class="display-box" ng-repeat="doctor in doctorList track by $index">
+            <div class="left">
+                <img ng-src="{{doctor.doctorHead}}" alt="">
+            </div>
+            <div class="right display-box-1">
+                <p>{{doctor.doctorName}} {{doctor.professionTitle}}</p>
+                <p>{{doctor.hospitalName}}</p>
+
+                <doctor-tag doctor-tag="doctor.specialtyName"></doctor-tag>
+
+                <div class="heat">
+                    <span class="consul">{{doctor.questionCount}}人咨询</span>
+                    <span class="listen">{{doctor.listenCount}}人收听</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>

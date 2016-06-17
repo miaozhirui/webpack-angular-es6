@@ -1,0 +1,43 @@
+<div class="component-question-list">
+    <!--咨询过的医生列表-->
+    <ul >
+        <li ng-repeat="question in listData track by $index" ng-click="handleLiClick(question.questionId, question.status, $event)">
+            <p class="question">{{question.describe}}</p>
+
+            <div class="doctor-info">
+                <div class="head">
+                    <img ng-src="{{question.doctorHead}}" alt="">
+                </div>
+                <p class="info">{{question.doctorName}} {{question.hospitalName}} {{question.departmentName}}{{question.professionTitle}}</p>
+                <div class="record ">
+
+                    <!-- status==2 已回复 -->
+                    <div class="left " ng-if="question.status==2">
+
+                        <span class="play_icon" ng-class="{twinke: isTwinke}"></span>
+                        <span>点击收听</span>
+                        <span>{{question.voiceSeconds}}"</span>
+                    </div>
+                    <div class="doctor-reply" ng-click="handlePlayVideo(question.questionId)"></div>
+
+                    <!-- status==1(新问题:已支付,等待回复) -->
+                    <div class="left invalid" ng-if="question.status==1">
+
+                        <span>正在准备答案</span>
+                    </div>
+                    
+                    <!--status==3超时 -->
+                     <div class="left invalid" ng-if="question.status==3">
+
+                        <span>已退款</span>
+                    </div>
+                    <div class="right" ng-if="question.status==2">
+                        <p>{{question.listen}}人听过</p>
+                    </div>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+
+</div>
