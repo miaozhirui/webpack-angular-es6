@@ -1,0 +1,8 @@
+{
+    "code": 1,
+    "content": {
+        "isPay": true,
+        "questionId": 30
+    },
+    "message": "SUCCESS"
+}

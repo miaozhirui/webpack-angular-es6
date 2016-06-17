@@ -1,0 +1,50 @@
+{
+  "code": 1,
+  "content": {
+      "data": [{
+          "weqId": "123",
+          "describe": "问题描述",
+          "voiceSeconds": "2",
+          "doctorHead": "http://imagestest.purple-health.com/images/doctorheads/2015/05/28/0dec8eb358c607188f4fd20efb3c7489.jpg",
+          "doctorName": "医生姓名",
+          "hospitalName": "医院名称",
+          "departmentName": "科室名称",
+          "professionTitle" : "职衔",
+          "free" : true,    
+          "isPay" : true,    
+          "listen" : 2,
+          "questionId":1,
+          "status":1
+      },
+      {
+          "weqId": "123",
+          "describe": "问题描述",
+          "voiceSeconds": "2",
+          "doctorHead": "/src/imgs/icon-search-01@3x.png",
+          "doctorName": "医生姓名",
+          "hospitalName": "医院名称",
+          "departmentName": "科室名称",
+          "professionTitle" : "职衔",
+          "free" : true,    
+          "isPay" : true,    
+          "listen" : 2,
+          "questionId":1,
+          "status":2
+      },{
+          "weqId": "123",
+          "describe": "问题描述",
+          "voiceSeconds": "2",
+          "doctorHead": "/src/imgs/icon-search-01@3x.png",
+          "doctorName": "医生姓名",
+          "hospitalName": "医院名称",
+          "departmentName": "科室名称",
+          "professionTitle" : "职衔",
+          "free" : true,    
+          "isPay" : true,    
+          "listen" : 2,
+          "questionId":1,
+          "status":3
+      }]
+  },
+  "message": "SUCCESS"
+}

@@ -1,0 +1,24 @@
+{
+    "code": 1,
+    "content": {
+        "departmentName": "妇产科",
+        "describe": "大 fads 发送到发送到发送到饭店撒发达省份",
+        "doctorHead": "http://imagestest.purple-health.com/images/doctorheads/2015/05/28/0dec8eb358c607188f4fd20efb3c7489.jpg",
+        "doctorId": "529",
+        "doctorName": "一月",
+        "head": "http://imagestest.purple-health.com/images/doctorheads/2015/05/28/0dec8eb358c607188f4fd20efb3c7489.jpg",
+        "hospitalName": "北京市仁和医院",
+        "listen": "122d3122d3",
+        "listenCount": "234",
+        "money": "0",
+        "nickName": "Andy",
+        "price": "500",
+        "professionTitle": "住院医师",
+        "questionCount": "5",
+        "questionId": "1",
+        "video": "",
+        "voiceSeconds": "2",
+        "status":2
+    },
+    "message": "SUCCESS"
+}

@@ -1,0 +1,34 @@
+{
+    "code": 1,
+    "content": {
+        "data": [ 
+             {
+                "departmentName": "妇产科",
+                "doctorHead": "http://imagestest.purple-health.com/images/doctorheads/2015/05/28/0dec8eb358c607188f4fd20efb3c7489.jpg",
+                "doctorId": "1354",
+                "doctorName": "嘟嘟哈哈嘻",
+                "hospitalName": "中国人民解放军第306医院",
+                "listenCount": "0",
+                "professionTitle": "住院医师",
+                "questionCount": "0",
+                "specialtyName":[{"specialtyId":"125","specialtyName":"\u5907\u5b55"},{"specialtyId":"77","specialtyName":"\u6bcd\u4e73\u5582\u517b"},{"specialtyId":"78","specialtyName":"\u8425\u517b\u8f85\u98df\u8425\u517b\u8f85\u98df"}],
+                "video": "/doctor/2015/10/26/d1bc23c3f69b78982e346460c1128f20.mp4"
+              },
+              {
+                "departmentName": "妇产科",
+                "doctorHead": "http://imagestest.purple-health.com/images/doctorheads/2015/05/28/0dec8eb358c607188f4fd20efb3c7489.jpg",
+                "doctorId": "1354",
+                "doctorName": "嘟嘟哈哈嘻",
+                "hospitalName": "中国人民解放军第306医院",
+                "listenCount": "0",
+                "professionTitle": "住院医师",
+                "questionCount": "0",
+                "specialtyName":[{"specialtyId":"125","specialtyName":"\u5907\u5b55"},{"specialtyId":"77","specialtyName":"\u6bcd\u4e73\u5582\u517b"},{"specialtyId":"78","specialtyName":"\u8425\u517b\u8f85\u98df\u8425\u517b\u8f85\u98df"}],
+                "video": "/doctor/2015/10/26/d1bc23c3f69b78982e346460c1128f20.mp4"
+              }
+            ],
+            "nowPage":1,
+            "totalPages":2
+        },
+    "message": "SUCCESS"
+}
