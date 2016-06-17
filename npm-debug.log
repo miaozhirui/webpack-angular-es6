@@ -18,7 +18,7 @@
 9 verbose stack     at maybeClose (internal/child_process.js:827:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 10 verbose pkgid dudu_weizhen@1.0.0
-11 verbose cwd /Users/mzr/miaozhirui/scaffolding/webpack_angular_es6
+11 verbose cwd /Users/mzr/miaozhirui/scaffolding/test
 12 error Darwin 14.5.0
 13 error argv "/usr/local/bin/iojs" "/usr/local/bin/npm" "run" "dev"
 14 error node v4.4.4
