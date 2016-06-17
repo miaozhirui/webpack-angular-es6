@@ -33,10 +33,10 @@
         var origin = location.origin;
         
         utils.wxShare({
-             title: '向您推荐【嘟嘟微诊】，便宜又高效的问诊平台',
-             content: '来【嘟嘟微诊】，免费收听医生们答过的问题',
+             title: '',
+             content: '',
              link: `${origin}/we.php`,
-             imgUrl: 'http://wxapitest.ziseyiliao.com/wz/build/imgs/dudu_logo.png'
+             imgUrl: ''
          })
      })
 

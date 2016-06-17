@@ -38,10 +38,10 @@ module.exports = function($stateProvider, $urlRouterProvider) {
 
                     utils.wxShare({
 
-                        title: `向您推荐${data.content.doctorName}医生，来自${data.content.hospitalName}${data.content.departmentName}`,
-                        content: '来【嘟嘟微诊】，免费收听Ta答过的问题',
-                        link: link,
-                        imgUrl: 'http://wxapitest.ziseyiliao.com/wz/build/imgs/dudu_logo.png'
+                        title: '',
+                        content: '',
+                        link: '',
+                        imgUrl: ''
                     })
 
                 })
@@ -113,10 +113,10 @@ module.exports = function($stateProvider, $urlRouterProvider) {
 
                     utils.wxShare({
 
-                        title: `${data.content.doctorName}医生回答了：${data.content.describe}`,
-                        content: '来【嘟嘟微诊】，免费收听医生们答过的问题',
-                        link: link,
-                        imgUrl: 'http://wxapitest.ziseyiliao.com/wz/build/imgs/dudu_logo.png'
+                        title: '',
+                        content: '',
+                        link: '',
+                        imgUrl: ''
                     })
                 })
 
