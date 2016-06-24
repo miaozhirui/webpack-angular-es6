@@ -32,6 +32,7 @@ var config = {
     devServer: {
         port: 8888,
         inline: true,
+        baseContent: './src',
         proxy: [{
             path: /we.php.*/,
             target: "http://localhost:8888",
